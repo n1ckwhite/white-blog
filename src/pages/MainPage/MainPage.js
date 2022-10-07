@@ -17,10 +17,10 @@ export const MainPage = () => {
       )
     }
   return (
-    <main className={stylesMainPage.main}>
+    <ul className={stylesMainPage.main}>
     {state && state.map(i => {
-     return <Article titleArticle={i.titleArticle} imageArticle={i.imageArticle} avatarUser={i.avatarUser} nameUser={i.nameUser} textArticle={i.textArticle}/>
+     return <li className={stylesMainPage.li} key={i.id}><Article titleArticle={i.titleArticle} imageArticle={i.imageArticle} avatarUser={i.avatarUser} nameUser={i.nameUser} textArticle={i.textArticle}/></li>
     })}
-    </main>
+    </ul>
   );
 };

@@ -15,7 +15,7 @@ export const getArticlesAll = () => {
     .then((snapshot) => {
       const arr = [];
       snapshot.docs.map((i) => {
-        arr.push(i.data());
+        arr.push({...i.data(),id:i.id});
         dispatch({
           type: GET_ARTICLES_RESPONSE,
           payload: arr,

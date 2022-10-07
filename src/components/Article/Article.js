@@ -1,5 +1,4 @@
 import stylesArticle from "./Article.module.css";
-
 export const Article = ({
   avatarUser,
   imageArticle,

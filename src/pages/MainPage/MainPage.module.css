@@ -1,8 +1,17 @@
 .main {
+    margin: 0;
     padding: 20px;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.li {
+    margin-top: 20px;
+}
+
+.li:first-child {
+    margin-top: 0;
+}
