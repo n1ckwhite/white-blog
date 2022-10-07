@@ -6,12 +6,19 @@
     border: 1px solid rgba(0,0,0,.4);
     border-radius: 10px;
     padding: 20px;
+    margin-top: 20px;
+}
+
+.article:first-of-type {
+    margin-top: 0;
 }
 
 
 .profileImg {
     margin-right: 5px;
     width: 60px;
+    height: 60px;
+    object-fit: cover;
     border-radius: 100%;
     border: 3px solid rgb(0, 83, 237);
     padding: 5px;
@@ -43,5 +50,6 @@
     }
     .profileImg {
         width: 40px;
+        height: 40px;
     }
 }
