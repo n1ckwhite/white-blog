@@ -1,7 +1,9 @@
+import { Article } from "../../components/Article/Article"
+
 export const MainPage = () => {
     return (
         <div>
-            <h1>MainPage</h1>
+            <Article/>
         </div>
     )
 }
